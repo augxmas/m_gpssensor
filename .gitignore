@@ -1,0 +1,18 @@
+# Android
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/.idea/
+android/*.iml
+android/.kotlin/
+
+# Web
+web/node_modules/
+web/dist/
+web/*.tsbuildinfo
+web/public/downloads/app-debug.apk
+
+# OS / editor
+.DS_Store
+*.log

@@ -1,0 +1,27 @@
+{
+  "index_patterns": ["gpssensor-*"],
+  "priority": 200,
+  "template": {
+    "settings": {
+      "number_of_shards": 1,
+      "number_of_replicas": 0
+    },
+    "mappings": {
+      "properties": {
+        "@timestamp":   { "type": "date" },
+        "session_id":   { "type": "keyword" },
+        "device":       { "type": "keyword" },
+        "device_id":    { "type": "keyword" },
+        "device_name":  { "type": "keyword" },
+        "interval_ms":  { "type": "integer" },
+        "t_ms":         { "type": "long" },
+        "location":     { "type": "geo_point" },
+        "alt":          { "type": "float" },
+        "gps_accuracy": { "type": "float" },
+        "ax": { "type": "float" }, "ay": { "type": "float" }, "az": { "type": "float" },
+        "gx": { "type": "float" }, "gy": { "type": "float" }, "gz": { "type": "float" },
+        "mx": { "type": "float" }, "my": { "type": "float" }, "mz": { "type": "float" }
+      }
+    }
+  }
+}

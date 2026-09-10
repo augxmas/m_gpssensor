@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GPS Sensor Logger</string>
+    <string name="notif_channel_name">Logging</string>
+</resources>
