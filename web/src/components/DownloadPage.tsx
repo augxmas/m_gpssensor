@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { QRCodeSVG } from "qrcode.react";
 
-const APK_PATH = "/downloads/app-debug.apk";
+const APK_PATH = `${import.meta.env.BASE_URL}downloads/app-debug.apk`;
 
 export default function DownloadPage() {
   const [status, setStatus] = useState<"checking" | "ok" | "missing">("checking");

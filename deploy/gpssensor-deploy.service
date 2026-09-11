@@ -1,0 +1,13 @@
+[Unit]
+Description=Deploy GPS Sensor web app from GitHub
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=ubuntu
+Group=ubuntu
+ExecStart=/home/ubuntu/apps/m_gpssensor/repo/deploy/deploy.sh
+
+[Install]
+WantedBy=multi-user.target

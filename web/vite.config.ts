@@ -27,6 +27,7 @@ function apkMime(): Plugin {
 }
 
 export default defineConfig({
+  base: "/gpssensor/",
   plugins: [react(), apkMime()],
   server: { host: true },
   preview: { host: true },
